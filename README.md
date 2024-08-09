@@ -1,86 +1,85 @@
-# Class Matching Visualization Tool Documentation
+# Sınıf Eşleştirme Görselleştirme Aracı Belgelemesi
 
-## Introduction
+## Giriş
 
-### Overview of the Tool
-The Class Matching Visualization Tool is a powerful React-based web application designed to help users analyze and visualize relationships and similarities between classes in a dataset. This tool enables users to upload datasets in either JSON or CSV format, specify how the data should be interpreted, and generate various visualizations—such as bar charts, pie charts, and scatter plots—to gain insights into class distributions and relationships.
+### Araç Genel Bakışı
+Sınıf Eşleştirme Görselleştirme Aracı, kullanıcıların bir veri setindeki sınıflar arasındaki ilişkileri ve benzerlikleri analiz etmelerine ve görselleştirmelerine yardımcı olmak için tasarlanmış güçlü bir React tabanlı web uygulamasıdır. Bu araç, kullanıcıların JSON veya CSV formatında veri setleri yüklemelerini, verilerin nasıl yorumlanacağını belirtmelerini ve sınıf dağılımları ve ilişkileri hakkında içgörüler elde etmek için çubuk grafikler, pasta grafikler ve dağılım grafikleri gibi çeşitli görselleştirmeler oluşturmalarını sağlar.
 
-### Key Features
-- **Data Upload:** Supports JSON and CSV formats, allowing for flexible data input.
-- **Customizable Keys:** Users can define which keys represent class names and their corresponding values.
-- **Multiple Visualization Types:** Choose from a variety of charts, including bar charts, pie charts, scatter plots, and more.
-- **Dynamic Interface:** The UI updates in real-time based on user inputs and the uploaded data.
+### Ana Özellikler
+- **Veri Yükleme:** JSON ve CSV formatlarını destekleyerek esnek veri girişi sağlar.
+- **Özelleştirilebilir Anahtarlar:** Kullanıcılar, sınıf adlarını ve bunlara karşılık gelen değerleri temsil eden anahtarları tanımlayabilirler.
+- **Birden Fazla Görselleştirme Türü:** Çubuk grafikler, pasta grafikler, dağılım grafikler ve daha fazlası dahil olmak üzere çeşitli grafiklerden seçim yapın.
+- **Dinamik Arayüz:** Kullanıcı girdilerine ve yüklenen verilere göre arayüz gerçek zamanlı olarak güncellenir.
 
-### Target Audience
-This tool is intended for:
-- **Data Scientists and Analysts** who need to quickly visualize class-based data to identify patterns, outliers, and class imbalances.
-- **Developers** seeking a customizable foundation for building more complex data visualization tools.
-- **Educators and Students** exploring data analysis techniques and learning how to interpret visual data representations.
+### Hedef Kitle
+Bu araç şu kişiler için tasarlanmıştır:
+- **Veri Bilimciler ve Analistler:** Sınıf tabanlı verileri hızlıca görselleştirerek desenleri, aykırı değerleri ve sınıf dengesizliklerini belirlemesi gereken kişiler.
+- **Geliştiriciler:** Daha karmaşık veri görselleştirme araçları oluşturmak için özelleştirilebilir bir temel arayan kişiler.
+- **Eğitmenler ve Öğrenciler:** Veri analiz tekniklerini keşfeden ve görsel veri temsillerini nasıl yorumlayacaklarını öğrenen kişiler.
 
-## Installation and Setup
+## Kurulum ve Kurulum
 
-### Prerequisites
-- **Node.js** (version 14.x or higher)
-- **npm** or **yarn**
+### Gereksinimler
+- **Node.js** (sürüm 14.x veya üstü)
+- **npm** veya **yarn**
 
-### Installation Steps
-1. **Clone the repository:**
+### Kurulum Adımları
+1. **Depoyu klonlayın:**
    ```bash
    git clone https://github.com/Crocus-AI-Team/tool-for-class.git
    ```
-2. **Navigate to the project directory:**
+2. **Proje dizinine gidin:**
    ```bash
    cd tool-for-class
    ```
-3. **Install dependencies:**
+3. **Bağımlılıkları yükleyin:**
    ```bash
    npm install
-   # or
+   # veya
    yarn install
    ```
-4. **Start the development server:**
+4. **Geliştirme sunucusunu başlatın:**
    ```bash
    npm start
-   # or
+   # veya
    yarn start
    ```
 
-### Running the Application
-Once the development server is running, open your browser and navigate to `http://localhost:3000` to start using the tool.
+### Uygulamayı Çalıştırma
+Geliştirme sunucusu çalışırken tarayıcınızı açın ve `http://localhost:3000` adresine giderek aracı kullanmaya başlayın.
 
-### Directory Structure
-- **src/**: Contains all the source code, including components, styles, and assets.
-- **public/**: Public assets and the HTML template.
-- **package.json**: Project metadata, dependencies, and scripts.
+### Dizin Yapısı
+- **src/**: Bileşenler, stiller ve varlıklar dahil olmak üzere tüm kaynak kodunu içerir.
+- **public/**: Genel varlıklar ve HTML şablonu.
+- **package.json**: Proje meta verileri, bağımlılıklar ve komutlar.
 
-## Usage
+## Kullanım
 
-### User Interface Overview
-The interface is designed to be intuitive and user-friendly, with sections dedicated to data uploading, key configuration, and visualization selection. A dynamic display area showcases the selected visualization based on the user's input.
+### Kullanıcı Arayüzü Genel Bakışı
+Arayüz, veri yükleme, anahtar yapılandırma ve görselleştirme seçimi için ayrılmış bölümlerle sezgisel ve kullanıcı dostu olacak şekilde tasarlanmıştır. Dinamik bir görüntüleme alanı, kullanıcının girdilerine dayalı olarak seçilen görselleştirmeyi gösterir.
 
-### Uploading Datasets
-1. **Upload a File:**
-   - Click the "Upload File" button.
-   - Select a JSON or CSV file from your computer.
-2. **Supported Data Formats:**
-   - **JSON:** Objects containing keys for classes and associated values.
-   - **CSV:** Columns representing classes and corresponding values.
+### Veri Setlerini Yükleme
+1. **Bir Dosya Yükleyin:**
+   - "Dosya Yükle" düğmesine tıklayın.
+   - Bilgisayarınızdan bir JSON veya CSV dosyası seçin.
+2. **Desteklenen Veri Formatları:**
+   - **JSON:** Sınıflar ve ilişkili değerler için anahtarlar içeren nesneler.
+   - **CSV:** Sınıflar ve ilişkili değerleri temsil eden sütunlar.
 
-### Configuring Visualization Options
-- **Data Type:** Select either JSON or CSV from the dropdown menu.
-- **Class Key:** Specify the key that identifies class names in the dataset.
-- **Value Key:** Specify the key that identifies the values associated with each class.
+### Görselleştirme Seçeneklerini Yapılandırma
+- **Veri Türü:** Açılır menüden JSON veya CSV seçin.
+- **Sınıf Anahtarı:** Veri setinde sınıf adlarını belirleyen anahtarı belirtin.
+- **Değer Anahtarı:** Her sınıfla ilişkili değerleri belirleyen anahtarı belirtin.
 
+## Veri Seti Yapı Gereksinimleri
 
-# Dataset Structure Requirements
+Bu kılavuz, Sınıf Eşleştirme Görselleştirme Aracı ile kullanılacak veri setleri için gerekli yapıyı sağlar. Araç, hem JSON hem de CSV formatlarını destekler ve sınıf adlarını ve bunlara karşılık gelen değerleri tanımlamak için belirli anahtarlara ihtiyaç duyar.
 
-This guide provides the necessary structure for datasets to be used with the Class Matching Visualization Tool. The tool supports both JSON and CSV formats, and it requires specific keys to identify class names and their associated values.
+### JSON Formatı
 
-## JSON Format
+Bir JSON dosyası kullanırken, her girişin en az iki anahtarı olan bir nesne olması gerekir: biri sınıf için, diğeri ise değerler için.
 
-When using a JSON file, each entry should be an object with at least two keys: one for the class and one for the values.
-
-### Example JSON Structure
+#### Örnek JSON Yapısı
 
 ```json
 [
@@ -99,16 +98,16 @@ When using a JSON file, each entry should be an object with at least two keys: o
 ]
 ```
 
-### JSON Key Requirements
+#### JSON Anahtar Gereksinimleri
 
-- **Class Key:** This key should contain the name of the class, such as "A" or "B".
-- **Value Key:** This key should contain an array of values associated with the class, like `[1, 2, 3, 4, 5]`.
+- **Sınıf Anahtarı:** Bu anahtar, "A" veya "B" gibi sınıf adını içermelidir.
+- **Değer Anahtarı:** Bu anahtar, sınıfla ilişkili değerlerin bir dizisini içermelidir (örneğin, `[1, 2, 3, 4, 5]`).
 
-## CSV Format
+### CSV Formatı
 
-When using a CSV file, the structure should include two columns: one for the class and one for the values. The values should be a comma-separated list within a single cell.
+Bir CSV dosyası kullanırken, yapı sınıf için bir sütun ve değerler için bir sütun içermelidir. Değerler, tek bir hücre içinde virgülle ayrılmış bir liste olmalıdır.
 
-### Example CSV Structure
+#### Örnek CSV Yapısı
 
 ```csv
 class,values
@@ -117,110 +116,112 @@ B,"2,3,4,5,6"
 C,"3,4,5,6,7"
 ```
 
-### CSV Column Requirements
+#### CSV Sütun Gereksinimleri
 
-- **Class Column:** This column should list the names of the classes (e.g., A, B, C).
-- **Values Column:** This column should contain a comma-separated string of values.
+- **Sınıf Sütunu:** Bu sütun, sınıf adlarının bir listesini içermelidir (örneğin, A, B, C).
+- **Değerler Sütunu:** Bu sütun, virgülle ayrılmış bir değerler dizisini içermelidir.
 
-### Selecting Class and Value Keys
-This tool provides the flexibility to select which keys in your dataset represent class names and their corresponding values. Simply enter the keys into the provided fields, and the tool will automatically update to reflect your selections.
+### Sınıf ve Değer Anahtarlarını Seçme
+Bu araç, veri setinizde sınıf adlarını ve bunlara karşılık gelen değerleri temsil eden anahtarları seçme esnekliği sağlar. Sağlanan alanlara anahtarları girin ve araç, seçiminizi yansıtacak şekilde otomatik olarak güncellenecektir.
 
-### Viewing and Interpreting Visualizations
-After configuring the dataset:
-1. **Select a Class:** Choose a class from the dropdown menu to focus the visualization on that class.
-2. **Choose a Visualization Type:** Select from various options, such as Bar Chart, Pie Chart, Scatter Plot, etc.
-3. **Interpret the Visualization:** Analyze the visual output to understand class similarities, distributions, and potential imbalances.
+### Görselleştirmeleri Görüntüleme ve Yorumlama
+Veri setini yapılandırdıktan sonra:
+1. **Bir Sınıf Seçin:** Görselleştirmeyi bu sınıfa odaklamak için açılır menüden bir sınıf seçin.
+2. **Bir Görselleştirme Türü Seçin:** Çubuk Grafik, Pasta Grafik, Dağılım Grafiği vb. seçeneklerden birini seçin.
+3. **Görselleştirmeyi Yorumlayın:** Görsel çıktıyı analiz ederek sınıf benzerliklerini, dağılımlarını ve potansiyel dengesizlikleri anlayın.
 
-### How This Tool Helps with Unbalanced Class Visualization
-Unbalanced classes in datasets can lead to biased models and misleading insights if not properly addressed. This tool offers several features to help users identify and understand class imbalances:
+### Bu Araç Dengesiz Sınıf Görselleştirmesine Nasıl Yardımcı Olur?
+Veri setlerindeki dengesiz sınıflar, düzgün bir şekilde ele alınmazsa yanlı modeller ve yanıltıcı içgörüler oluşturabilir. Bu araç, kullanıcıların sınıf dengesizliklerini tanımlamalarına ve anlamalarına yardımcı olmak için çeşitli özellikler sunar:
 
-- **Visual Comparison:** By visualizing class distributions through bar charts, pie charts, and scatter plots, users can quickly see which classes are underrepresented or overrepresented.
-- **Similarity Analysis:** The tool calculates and visualizes the degree of similarity between classes, which can highlight whether certain classes share more characteristics with others, potentially masking or exacerbating imbalances.
-- **Dynamic Exploration:** Users can interactively explore how different classes compare to one another, enabling a deeper understanding of how class imbalances may impact data analysis and modeling efforts.
+- **Görsel Karşılaştırma:** Çubuk grafikler, pasta grafikler ve dağılım grafikler aracılığıyla sınıf dağılımlarını görselleştirerek, hangi sınıfların yetersiz temsil edildiğini veya aşırı temsil edildiğini hızlıca görebilirsiniz.
+- **Benzerlik Analizi:** Araç, sınıflar arasındaki benzerlik derecesini hesaplar ve görselleştirir, bu da belirli sınıfların diğerleriyle daha fazla özellik paylaşıp paylaşmadığını, dolayısıyla dengesizlikleri maskeleyip maskelemediğini vurgulayabilir.
+- **Dinamik Keşif:** Kullanıcılar, farklı sınıfların birbirleriyle nasıl karşılaştırıldığını etkileşimli olarak keşfederek, sınıf dengesizliklerinin veri analizi ve modelleme çabalarını nasıl etkileyebileceğini daha iyi anlayabilir.
 
-By providing these insights, the tool helps users take proactive steps to address class imbalances, such as data augmentation, resampling techniques, or adjusting modeling strategies to ensure fair and accurate outcomes.
+Bu içgörüleri sağlayarak araç, kullanıcıların sınıf dengesizliklerini ele almak için veri artırma, yeniden örnekleme teknikleri veya adil ve doğru sonuçlar sağlamak için modelleme stratejilerini ayarlama gibi proaktif adımlar atmalarına yardımcı olur.
 
-## Customization
+##
 
-### Modifying the User Interface
-To customize the UI:
-- **Styles:** Update styles in `App.css` or modify individual component styles.
-- **Layout:** Adjust the component layout in `App.js` or related component files to fit your needs.
+ Özelleştirme
 
-### Adding New Visualization Types
-1. **Create a New Component:**
-   - Add a new file in the `components` directory (e.g., `CustomChartComponent.js`).
-2. **Include the Component in `App.js`:**
-   - Import and integrate your new component.
-3. **Update the UI:**
-   - Add the new visualization type to the dropdown menu in the interface.
+### Kullanıcı Arayüzünü Değiştirme
+UI'yı özelleştirmek için:
+- **Stiller:** `App.css` içindeki stilleri güncelleyin veya bireysel bileşen stillerini değiştirin.
+- **Düzen:** `App.js` veya ilgili bileşen dosyalarındaki bileşen düzenini ihtiyacınıza göre ayarlayın.
 
-### Changing Default Settings
-Modify initial values in `App.js` for:
-- **Default Class Key:** Update the `classKey` state.
-- **Default Value Key:** Update the `valueKey` state.
+### Yeni Görselleştirme Türleri Ekleme
+1. **Yeni Bir Bileşen Oluşturun:**
+   - `components` dizininde yeni bir dosya ekleyin (örneğin, `CustomChartComponent.js`).
+2. **Bileşeni `App.js` İçine Dahil Edin:**
+   - Yeni bileşeni içe aktarın ve entegre edin.
+3. **UI'yı Güncelleyin:**
+   - Arayüzdeki açılır menüye yeni görselleştirme türünü ekleyin.
 
-### Handling Data and Visualization Logic
-- **Data Processing:** The main data processing functions (e.g., `processData`, `updateChartData`) are found in `App.js`. Customize these functions to alter how the data is interpreted and visualized.
+### Varsayılan Ayarları Değiştirme
+`App.js` içindeki başlangıç değerlerini değiştirin:
+- **Varsayılan Sınıf Anahtarı:** `classKey` durumunu güncelleyin.
+- **Varsayılan Değer Anahtarı:** `valueKey` durumunu güncelleyin.
 
-## Development and Contribution
+### Veri ve Görselleştirme Mantığını Yönetme
+- **Veri İşleme:** Ana veri işleme fonksiyonları (örneğin, `processData`, `updateChartData`) `App.js` içinde bulunur. Bu fonksiyonları özelleştirerek verilerin nasıl yorumlanacağını ve görselleştirileceğini değiştirebilirsiniz.
 
-### Development Environment Setup
-To set up a local development environment:
-1. Follow the installation steps.
-2. Ensure you have compatible versions of Node.js and npm/yarn.
+## Geliştirme ve Katkı
 
-### Code Structure and Key Components
-- **App.js:** Manages the main application logic and state.
-- **components/**: Contains reusable UI components like charts, selectors, and loaders.
-- **styles/**: Includes all CSS files used in the application.
+### Geliştirme Ortamı Kurulumu
+Yerel bir geliştirme ortamı kurmak için:
+1. Kurulum adımlarını izleyin.
+2. Node.js ve npm/yarn'ın uyumlu sürümlerine sahip olduğunuzdan emin olun.
 
-### Extending Functionality
-- **Add New Features:** Create new components or modify existing ones to introduce additional features.
-- **Fix Bugs:** Address issues by updating the relevant code in `App.js` or the affected component.
+### Kod Yapısı ve Anahtar Bileşenler
+- **App.js:** Ana uygulama mantığını ve durumunu yönetir.
+- **components/**: Grafikler, seçiciler ve yükleyiciler gibi yeniden kullanılabilir UI bileşenlerini içerir.
+- **styles/**: Uygulamada kullanılan tüm CSS dosyalarını içerir.
 
-### Submitting Issues and Pull Requests
-- **Report Issues:** Use the repository’s Issues tab on GitHub to report bugs or request new features.
-- **Submit Contributions:** Follow best practices when submitting pull requests to ensure code quality and consistency.
+### İşlevselliği Genişletme
+- **Yeni Özellikler Ekleyin:** Yeni bileşenler oluşturun veya ek özellikler tanıtmak için mevcut olanları değiştirin.
+- **Hataları Düzeltin:** İlgili kodu `App.js` veya etkilenen bileşende güncelleyerek sorunları çözün.
 
-### Coding Standards and Best Practices
-- **ESLint:** Adhere to the ESLint rules for consistent code formatting.
-- **Documentation:** Comment your code where necessary to improve readability and maintainability.
+### Sorun ve Çekme Talepleri Gönderme
+- **Sorun Bildirin:** GitHub'daki depo Issues sekmesini kullanarak hataları bildirin veya yeni özellikler isteyin.
+- **Katkıda Bulunun:** Çekme taleplerini gönderirken kod kalitesini ve tutarlılığını sağlamak için en iyi uygulamaları takip edin.
 
-## API Documentation
+### Kodlama Standartları ve En İyi Uygulamalar
+- **ESLint:** Tutarlı kod formatlaması için ESLint kurallarına uyun.
+- **Belgeler:** Okunabilirliği ve sürdürülebilirliği artırmak için gerekli yerlerde kodunuzu yorumlayın.
 
-### Overview of APIs Used
-If applicable, this section would describe any APIs the tool interacts with. For this specific tool, no external APIs are required.
+## API Belgelemesi
 
-## Troubleshooting
+### Kullanılan API'lerin Genel Bakışı
+Uygulanabilirse, bu bölüm aracın etkileşimde bulunduğu API'leri tanımlar. Bu özel araç için, harici API'ler gerekli değildir.
 
-### Common Issues and Solutions
-- **File Upload Errors:** Ensure the file is properly formatted and has the correct extension (.json or .csv).
-- **Visualization Not Updating:** Double-check that the class and value keys are correctly set and match the dataset structure.
+## Sorun Giderme
 
-### Understanding Console Errors and Warnings
-- **React Warnings:** You may encounter warnings related to deprecated features or recommended practices. Address these by following the guidance provided in the console or updating the relevant code.
+### Yaygın Sorunlar ve Çözümler
+- **Dosya Yükleme Hataları:** Dosyanın doğru formatlandığından ve doğru uzantıya sahip olduğundan emin olun (.json veya .csv).
+- **Görselleştirme Güncellenmiyor:** Sınıf ve değer anahtarlarının doğru ayarlandığını ve veri seti yapısıyla eşleştiğini kontrol edin.
 
-### Debugging Tips
-- **Chrome DevTools:** Use DevTools to inspect elements, debug code, and monitor network activity.
-- **Logging:** Insert `console.log` statements in `App.js` to trace data flow and monitor state changes.
+### Konsol Hatalarını ve Uyarılarını Anlama
+- **React Uyarıları:** Kullanım dışı bırakılmış özellikler veya önerilen uygulamalarla ilgili uyarılarla karşılaşabilirsiniz. Bu uyarıları konsolda verilen talimatları izleyerek veya ilgili kodu güncelleyerek giderin.
 
-## FAQ
+### Hata Ayıklama İpuçları
+- **Chrome DevTools:** Öğeleri incelemek, kodu hata ayıklamak ve ağ etkinliğini izlemek için DevTools'u kullanın.
+- **Günlük Kaydı:** Veri akışını izlemek ve durum değişikliklerini izlemek için `App.js` içine `console.log` ifadeleri ekleyin.
 
-### Frequently Asked Questions
-1. **What file formats are supported?**
-   - JSON and CSV.
-2. **Can I add my own visualizations?**
-   - Yes, you can extend the tool by following the guide in the Customization section.
+## SSS
 
-## License
+### Sıkça Sorulan Sorular
+1. **Hangi dosya formatları destekleniyor?**
+   - JSON ve CSV.
+2. **Kendi görselleştirmelerimi ekleyebilir miyim?**
+   - Evet, Özelleştirme bölümündeki kılavuzu takip ederek aracı genişletebilirsiniz.
 
-This project is licensed under the MIT License. For more details, refer to the LICENSE file included in the repository.
+## Lisans
 
-## Changelog
+Bu proje MIT Lisansı altında lisanslanmıştır. Daha fazla ayrıntı için depoda bulunan LICENSE dosyasına bakın.
 
-### Version 1.0.0
-- **Initial Release:**
-  - Support for JSON and CSV data uploads.
-  - Multiple visualization types, including Bar Chart, Pie Chart, and more.
-  - Interactive and dynamic UI.
+## Değişiklik Günlüğü
+
+### Sürüm 1.0.0
+- **İlk Yayın:**
+  - JSON ve CSV veri yüklemelerini destekler.
+  - Çubuk Grafik, Pasta Grafik ve daha fazlası dahil olmak üzere birden fazla görselleştirme türü.
+  - Etkileşimli ve dinamik kullanıcı arayüzü.
