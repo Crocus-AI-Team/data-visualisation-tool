@@ -1,21 +1,13 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +27,61 @@
   to {
     transform: rotate(360deg);
   }
+}
+.App-header {
+  background: linear-gradient(to right, #3f51b5, #5c6bc0);
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+  border-bottom: 2px solid #283593;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.App-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.App-main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f0f2f5;
+  height: fill-available;
+}
+
+.form-control {
+  margin: 10px;
+  width: 200px;
+}
+
+.data-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.file-input {
+  display: none;
+}
+
+.control-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.custom-button {
+  background-color: #4caf50 !important;
+  color: #fff !important;
 }

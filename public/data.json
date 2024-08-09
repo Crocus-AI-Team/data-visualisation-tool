@@ -1,0 +1,15 @@
+[
+    { "class": "A", "matchClass": "B", "matchValue": 10 },
+    { "class": "A", "matchClass": "C", "matchValue": 15 },
+    { "class": "A", "matchClass": "D", "matchValue": 5 },
+    { "class": "B", "matchClass": "A", "matchValue": 12 },
+    { "class": "B", "matchClass": "C", "matchValue": 8 },
+    { "class": "B", "matchClass": "D", "matchValue": 7 },
+    { "class": "C", "matchClass": "A", "matchValue": 14 },
+    { "class": "C", "matchClass": "B", "matchValue": 6 },
+    { "class": "C", "matchClass": "D", "matchValue": 9 },
+    { "class": "D", "matchClass": "A", "matchValue": 11 },
+    { "class": "D", "matchClass": "B", "matchValue": 13 },
+    { "class": "D", "matchClass": "C", "matchValue": 4 }
+  ]
+  

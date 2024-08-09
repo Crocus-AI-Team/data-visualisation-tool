@@ -1,0 +1,15 @@
+.class-selector {
+    margin-top: 20px;
+  }
+  
+  .class-card {
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .class-card.selected {
+    background-color: #8884d8;
+    color: white;
+  }
+  
