@@ -1,5 +1,8 @@
 # Sınıf Eşleştirme Görselleştirme Aracı Belgelemesi
 
+![Uygulamadan örnek bir resim](ornekFotograflar/ornek-1.jpeg)
+
+
 ## Giriş
 
 ### Araç Genel Bakışı
